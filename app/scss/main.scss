@@ -1,0 +1,144 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Be Vietnam', sans-serif;
+  overflow-x: hidden;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col_3 {
+  width: 30%;
+}
+
+.button {
+  padding: 1.3rem 2.5rem;
+  background-color: $bright_red_color;
+  color: $white_color;
+  font-size: 1.8rem;
+  font-family: "Poppins";
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: lighten($bright_red_color, 16);
+  }
+}
+
+h1, h2, h3 {
+  color: $very_dark_blue_color;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  margin-bottom: 2rem;
+  font-size: 3.4rem;
+}
+
+p {
+  color: $dark_grayish_blue_color;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+// HEADER 
+.header {
+  display: flex;
+  align-items: center;
+  margin: 5rem 16rem;
+
+  .logo_link {
+    display: inline-block;
+    margin-right: 3rem;
+  }
+
+  .nav_mobile_button {
+    display: none;   
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .list {
+      display: flex;
+  
+      .list_item {
+        padding: 0 1rem;
+  
+        .list_item_link {
+          display: inline-block;
+          padding: 0 0.5rem;
+          color: $very_dark_blue_color;
+          text-decoration: none;
+          
+          &:hover {
+            color: $dark_grayish_blue_color;
+          }
+        }
+      }
+    }
+  }
+}
+
+// INTRO 
+.intro {
+  display: flex;
+  margin: 11rem 0 11rem 16rem;
+
+  .container_intro {
+
+    h1 {
+      font-size: 7.2rem;
+    }
+
+    p {
+      margin-bottom: 3.5rem;
+    }
+
+    .button {
+      padding: 1.3rem 4rem;
+      font-size: 2.2rem;
+    }
+  }
+
+  .container_img {
+    overflow: hidden;
+  }
+}
+
+// BOOST 
+.container_boost {
+  padding: 7rem 2.5rem 6rem;
+  background: url("../../dist/images/") $bright_red_color;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  h2 {
+    color: $vary_light_gray_color;
+  }
+}
+
+@import "media";
