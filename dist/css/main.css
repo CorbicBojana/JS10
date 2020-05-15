@@ -53,12 +53,14 @@ body {
   justify-content: space-between;
   flex-wrap: wrap; }
 
+.col {
+  width: 50%; }
+
 .col_3 {
   width: 30%; }
 
 .button {
   padding: 1.5rem 3rem;
-  font-size: 1.8rem;
   font-weight: 500;
   font-family: 'Be Vietnam', sans-serif;
   border-radius: 3rem;
@@ -80,21 +82,23 @@ body {
     color: #f79e87; }
 
 h1, h2, h3 {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   color: #1d1e25;
   font-weight: 700;
-  line-height: 1.2; }
+  line-height: 1.1; }
 
 h1 {
-  font-size: 7.2rem; }
+  font-size: 5.4rem; }
 
 h2 {
   font-size: 3.4rem; }
 
+h3 {
+  font-size: 2.4rem; }
+
 p {
-  margin-bottom: 3.5rem;
+  margin-bottom: 4rem;
   color: #9095a7;
-  font-size: 2rem;
   line-height: 1.6; }
 
 .header {
@@ -127,20 +131,50 @@ p {
   display: flex;
   margin: 11rem 16rem; }
   .intro .container_intro {
-    width: 100%; }
+    align-self: center;
+    width: 50%; }
+    .intro .container_intro p {
+      width: 70%; }
   .intro .container_img {
     width: 50%; }
     .intro .container_img img {
       width: 100%; }
+
+.container_manage {
+  display: flex;
+  margin: 0 16rem; }
+  .container_manage .col h2 {
+    width: 80%; }
+  .container_manage .col p {
+    width: 60%; }
+  .container_manage .col .col_container {
+    display: flex; }
+    .container_manage .col .col_container span {
+      display: inline-block;
+      margin-right: 2rem;
+      padding: 1.4rem 2.8rem;
+      background-color: #f25f3a;
+      color: #fafafa;
+      border-radius: 1.8rem; }
+    .container_manage .col .col_container .content_text {
+      width: 100%; }
+
+.container_slider {
+  margin: 11rem 0 16rem;
+  text-align: center; }
 
 .container_simplify {
   display: flex;
   justify-content: space-between;
   padding: 7rem 16rem;
   background: url("../../dist/images/bg-simplify-section-desktop.svg") #f25f3a;
+  background-position: bottom;
   background-repeat: no-repeat; }
   .container_simplify h2 {
+    width: 40%;
     color: #fafafa; }
+  .container_simplify .container_button {
+    align-self: center; }
 
 @media only screen and (max-width: 780px) {
   .col_3 {
