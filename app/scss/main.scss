@@ -154,6 +154,7 @@ p {
 // MANAGE
 .container_manage {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 16rem;
 
   .col {
