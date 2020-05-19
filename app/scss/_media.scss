@@ -24,6 +24,10 @@
         padding: 1.2rem 2.8rem;
     }
 
+    .bg_mask {
+        background: url("../../dist/images/bg-simplify-section-mobile.svg");
+    }
+
     .header {
         margin: 3.5rem 2.5rem;
         flex-direction: column;
@@ -182,8 +186,9 @@
         justify-content: center;
         flex-direction: column;
         padding: 9rem 2.5rem;
+        background-image: url("../../dist/images/bg-simplify-section-mobile.svg");
         background-position: left;
-
+        
         h2 {
             width: 100%;
             text-align: center;
