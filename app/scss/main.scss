@@ -296,16 +296,20 @@ p {
       border-radius: 3rem;
       border: none;
       outline: none;
+    }
 
-      .button {
-        box-shadow: none;
-      }
+    .button {
+      box-shadow: none;
     }
 
     p {
       margin-bottom: 0;
     }
   }
+}
+
+.footer_mobile {
+  display: none;
 }
 
 @import "media";

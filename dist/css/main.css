@@ -235,10 +235,13 @@ p {
       border-radius: 3rem;
       border: none;
       outline: none; }
-      .footer .col_3 .form_input .button {
-        box-shadow: none; }
+    .footer .col_3 .button {
+      box-shadow: none; }
     .footer .col_3 p {
       margin-bottom: 0; }
+
+.footer_mobile {
+  display: none; }
 
 @media only screen and (max-width: 780px) {
   .col_3, .col {
@@ -271,12 +274,13 @@ p {
         outline: none;
         background-color: transparent;
         position: relative;
+        z-index: 100;
         cursor: pointer; }
-        .header .container_header .nav_mobile_button .nav_mobile_button_line {
+        .header .container_header .nav_mobile_button .nav_mobile_button_open {
           width: 100%;
           height: 0.4rem;
           background-color: #1d1e25; }
-          .header .container_header .nav_mobile_button .nav_mobile_button_line::after {
+          .header .container_header .nav_mobile_button .nav_mobile_button_open::after {
             content: "";
             width: 100%;
             height: 0.4rem;
@@ -286,7 +290,7 @@ p {
             left: 0;
             right: 0;
             transform: translateY(-50%); }
-          .header .container_header .nav_mobile_button .nav_mobile_button_line::before {
+          .header .container_header .nav_mobile_button .nav_mobile_button_open::before {
             content: "";
             width: 100%;
             height: 0.4rem;
@@ -295,6 +299,24 @@ p {
             left: 0;
             right: 0;
             bottom: 0; }
+        .header .container_header .nav_mobile_button .nav_mobile_button_close {
+          width: 100%; }
+          .header .container_header .nav_mobile_button .nav_mobile_button_close::after {
+            content: "";
+            width: 100%;
+            height: 0.4rem;
+            position: absolute;
+            top: 0.8rem;
+            transform: rotate(45deg);
+            background-color: #1d1e25; }
+          .header .container_header .nav_mobile_button .nav_mobile_button_close::before {
+            content: "";
+            width: 100%;
+            height: 0.4rem;
+            position: absolute;
+            top: 0.8rem;
+            transform: rotate(-45deg);
+            background-color: #1d1e25; }
     .header .nav {
       display: none;
       flex-direction: column;
