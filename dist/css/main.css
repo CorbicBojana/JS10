@@ -67,7 +67,7 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-  box-shadow: 0.6rem 0.6rem 1.5rem #f25f3a; }
+  box-shadow: 0rem 1rem 1.2rem -0.6rem #f25f3a; }
 
 .button_primary {
   background-color: #f25f3a;
@@ -192,6 +192,10 @@ p {
     color: #fafafa; }
   .container_simplify .container_button {
     align-self: center; }
+
+.footer {
+  padding: 6rem 16rem;
+  background-color: #1d1e25; }
 
 @media only screen and (max-width: 780px) {
   .col_3 {
