@@ -1,20 +1,32 @@
-var mobile_button = document.getElementById("nav_mobile_button");
-var mobile_button_open = document.getElementById("nav_mobile_button_open");
+var mobileButton = document.getElementById("nav_mobile_button");
+var mobileButtonOpen = document.getElementById("nav_mobile_button_open");
 var nav = document.getElementById("nav");
-var open_nav = false;
+var openNav = false;
 
-mobile_button.addEventListener("click", function() {
-    if (open_nav === false) {
-        mobile_button_open.classList.add("nav_mobile_button_close");
-        mobile_button_open.classList.remove("nav_mobile_button_open");
+mobileButton.addEventListener("click", function() {
+    if (openNav === false) {
+        mobileButtonOpen.classList.add("nav_mobile_button_close");
+        mobileButtonOpen.classList.remove("nav_mobile_button_open");
         nav.style.display = "flex";
 
-        open_nav = true
+        openNav = true
     } else {
-        mobile_button_open.classList.add("nav_mobile_button_open");
-        mobile_button_open.classList.remove("nav_mobile_button_close");
+        mobileButtonOpen.classList.add("nav_mobile_button_open");
+        mobileButtonOpen.classList.remove("nav_mobile_button_close");
         nav.style.display = "none";
 
-        open_nav = false
+        openNav = false
     }
 })
+
+var sliderButton = document.getElementsByClassName("slider_button_link");
+
+for (var i=0; i < sliderButton.length; i++) {
+    sliderButton[i].addEventListener("click", function(e) {
+
+        for (var y=0; y < sliderButton.length; y++) {
+            sliderButton[y].classList.remove("active");
+            e.target.classList.add("active");
+        }
+    })
+}
