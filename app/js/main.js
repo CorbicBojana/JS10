@@ -46,16 +46,16 @@ sliderButtonChange();
 // Check email format
 const form = document.getElementById("form");
 const email = document.getElementById("form_input");
+var small = document.getElementById("small");
 
 // Show error message
 function showError(message) {
-    var small = document.getElementById("small");
     small.innerText = message;
   }
   
 // Hide error message
 function showSucces(input) {
-    //
+    small.innerHTML = "";
   }
 
 // Check required fields
@@ -77,7 +77,7 @@ function checkEmail(input) {
     }
   }
   
-  form.addEventListener("submit", function(e, input) {
+  form.addEventListener("submit", function(e) {
     e.preventDefault();
   
     checkRequired(email);
