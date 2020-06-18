@@ -176,7 +176,7 @@ p {
       background-color: #fafafa;
       position: relative;
       min-width: 54rem;
-      animation: 30s infinite slide; }
+      animation: 26s slide infinite; }
       .container_slider .row .col_3:first-child {
         margin-left: 13rem; }
       .container_slider .row .col_3:last-child {
@@ -202,9 +202,9 @@ p {
   35% {
     left: -20%; }
   50% {
-    left: -55%; }
+    left: -60%; }
   60% {
-    left: -55%; }
+    left: -60%; }
   75% {
     left: -75%; }
   85% {
@@ -267,6 +267,11 @@ p {
       border-radius: 3rem;
       border: none;
       outline: none; }
+    .footer .col_3 small {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #f25f3a;
+      font-style: italic; }
     .footer .col_3 .button {
       box-shadow: none; }
     .footer .col_3 p {
@@ -290,6 +295,25 @@ p {
     padding: 1.2rem 2.8rem; }
   .bg_mask {
     background-image: url("../../dist/images/bg-simplify-section-mobile.svg"); }
+  @keyframes slide {
+    0% {
+      left: 0; }
+    10% {
+      left: 0; }
+    25% {
+      left: -40%; }
+    35% {
+      left: -40%; }
+    50% {
+      left: -80%; }
+    60% {
+      left: -80%; }
+    75% {
+      left: -120%; }
+    85% {
+      left: -120%; }
+    100% {
+      left: 0; } }
   .header {
     margin: 3.5rem 2.5rem;
     flex-direction: column; }

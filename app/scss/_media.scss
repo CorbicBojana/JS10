@@ -28,6 +28,36 @@
         background-image: url("../../dist/images/bg-simplify-section-mobile.svg");
     }
 
+    @keyframes slide {
+        0% {
+          left: 0;
+        }
+        10% {
+          left: 0;
+        }
+        25% {
+          left: -40%;
+        }
+        35% {
+          left: -40%;
+        }
+        50% {
+          left: -80%;
+        }
+        60% {
+          left: -80%;
+        }
+        75% {
+          left: -120%;
+        }
+        85% {
+          left: -120%;
+        }
+        100% {
+          left: 0;
+        }
+      }
+
     .header {
         margin: 3.5rem 2.5rem;
         flex-direction: column;
